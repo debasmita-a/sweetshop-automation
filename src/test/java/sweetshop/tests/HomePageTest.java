@@ -1,6 +1,13 @@
 package sweetshop.tests;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import sweetshop.basetest.BaseTest;
@@ -38,8 +45,17 @@ public class HomePageTest extends BaseTest{
 		Assert.assertTrue(homePage.isH2HeaderVisible());
 	}
 	
-	@Test
-	public void getRetroSweetDataMapTest() {
+	@DataProvider
+	public Object[][] retrosweetdata(){
+		return new Object[][] {
+			{"Bon Bons", "Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets.", "£1.00"},
+			{"Chocolate Cups", "Candy Chocolate Cups.", "£1.00"},
+			{"Sherbert Discs", "UFO's Sherbert Filled Flying Saucers.", "£0.95"}
+		};
+	}
+	
+	@Test(dataProvider="retrosweetdata")
+	public void getRetroSweetDataMapTest(String name, String desc, String price) {
 		homePage.getRetroSweetDataMap();
 	}
 	

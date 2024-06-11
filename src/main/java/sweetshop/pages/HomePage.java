@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,7 @@ public class HomePage {
 	private By prices = By.xpath("//div[@class='row text-center']//div[@class='card-body']/p[2]");
 	private By addToBasketLink = By.xpath("//div[@class='row text-center']//div[@class='card-footer']/a");
 	private By footerText = By.xpath("(//div[@class='container']/p)[2]");
+	private By saleImg = By.xpath("//img[@alt='Sale now on']");
 
 	private By sweetsLink = By.linkText("Sweets");
 	private By aboutLink = By.linkText("About");
@@ -89,22 +91,35 @@ public class HomePage {
 		}
 		return cardPrice;
 	}
-	
 
-	public Map<String, String> getRetroSweetDataMap() {
+	public List<HashMap<String, HashMap<String, String>>> getRetroSweetDataMap() {
 		List<String> cardHeader = getAllCardHeaders();
 		List<String> cardText = getAllCardDescriptions();
 		List<String> cardPrice = getRetroSweetPrices();
-		
-		Map<String, String> dataMap = new HashMap<String, String>();
-		
-		for(int i=0; i<4; i++) {
-			dataMap.put("sweet name", cardHeader.get(i));
-			dataMap.put("sweet desc", cardText.get(i));
-			dataMap.put("sweet price", cardPrice.get(i));
-			System.out.println(dataMap);
-		}	
-		return dataMap;
+
+		List<HashMap<String, HashMap<String, String>>> listOfMaps = new ArrayList<HashMap<String, HashMap<String, String>>>();
+
+		for (int i = 0; i < 4; i++) {
+
+			HashMap<String, HashMap<String, String>> data = new HashMap<String, HashMap<String, String>>();
+			HashMap<String, String> dataMap = new HashMap<String, String>();
+			dataMap.put("desc", cardText.get(i));
+			dataMap.put("price", cardPrice.get(i));
+			data.put(cardHeader.get(i), dataMap);
+
+			listOfMaps.add(data);
+		}
+		System.out.println(listOfMaps);
+
+		return listOfMaps;
 	}
 
+	public void getDataMap() {
+		List<HashMap<String, HashMap<String, String>>> listOfMaps = getRetroSweetDataMap();
+		Map<String, String> maps = new HashMap<>();
+
+		for (int i = 0; i < listOfMaps.size(); i++) {
+
+		}
+	}
 }

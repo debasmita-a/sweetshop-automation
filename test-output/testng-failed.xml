@@ -5,8 +5,8 @@
     <classes>
       <class name="sweetshop.tests.HomePageTest">
         <methods>
+          <include name="getRetroSweetDataMapTest" invocation-numbers="0 1 2"/>
           <include name="teardown"/>
-          <include name="isH2HeaderVisibleTest"/>
           <include name="init"/>
         </methods>
       </class> <!-- sweetshop.tests.HomePageTest -->
