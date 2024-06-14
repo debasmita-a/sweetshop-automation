@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sweetshop.tests.HomePageTest">
+      <class name="sweetshop.tests.YourBasketPageTest">
         <methods>
-          <include name="getRetroSweetDataMapTest" invocation-numbers="0 1 2"/>
           <include name="teardown"/>
+          <include name="addToBasket" invocation-numbers="0 1 2 3"/>
+          <include name="setup_basketPage"/>
           <include name="init"/>
         </methods>
-      </class> <!-- sweetshop.tests.HomePageTest -->
+      </class> <!-- sweetshop.tests.YourBasketPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

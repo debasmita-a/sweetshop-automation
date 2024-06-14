@@ -8,7 +8,9 @@ import org.testng.annotations.BeforeTest;
 
 import sweetshop.driverfactory.DriverFactory;
 import sweetshop.driverfactory.PropertiesFileReader;
+import sweetshop.pages.BrowseSweetsPage;
 import sweetshop.pages.HomePage;
+import sweetshop.pages.YourBasketPage;
 
 public class BaseTest {
 	
@@ -17,6 +19,8 @@ public class BaseTest {
 	public DriverFactory df;
 	public PropertiesFileReader configReader;
 	public HomePage homePage;
+	public BrowseSweetsPage sweetsPage;
+	public YourBasketPage basketPage;
 
 	@BeforeTest
 	public void init() {

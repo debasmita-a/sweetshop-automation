@@ -45,6 +45,16 @@ public class HomePageTest extends BaseTest{
 		Assert.assertTrue(homePage.isH2HeaderVisible());
 	}
 	
+	@Test
+	public void isSalesImageAvailableTest() {
+		Assert.assertTrue(homePage.isSalesImageAvailable());
+	}
+	
+	@Test
+	public void getBadgeCountTest() {
+		Assert.assertTrue(homePage.getBadgeCount());
+	}
+	
 	@DataProvider
 	public Object[][] retrosweetdata(){
 		return new Object[][] {
@@ -56,7 +66,9 @@ public class HomePageTest extends BaseTest{
 	
 	@Test(dataProvider="retrosweetdata")
 	public void getRetroSweetDataMapTest(String name, String desc, String price) {
-		homePage.getRetroSweetDataMap();
+		homePage.getDataMap();
 	}
+	
+	
 	
 }

@@ -2,9 +2,10 @@ package sweetshop.pages;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.ListIterator;
+import java.util.Map.Entry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +27,7 @@ public class HomePage {
 	private By pageHeader = By.xpath("//h1");
 	private By pHeader = By.xpath("(//p[@class='lead'])[1]");
 	private By h2Header = By.xpath("//h2");
-	private By browserSweetsLink = By.linkText("Browse Sweets");
+	private By browseSweetsLink = By.linkText("Browse Sweets");
 	private By retroSweetsHeader = By.xpath("(//p[@class='lead'])[2]");
 	private By cardheaders = By.xpath("//div[@class='row text-center']//div[@class='card-body']/h4");
 	private By carttexts = By.xpath("//div[@class='row text-center']//div[@class='card-body']/p[1]");
@@ -38,7 +39,6 @@ public class HomePage {
 	private By sweetsLink = By.linkText("Sweets");
 	private By aboutLink = By.linkText("About");
 	private By loginLink = By.linkText("Login");
-	private By basketLink = By.linkText("Basket");
 	private By badgeCount = By.xpath("//span[contains(@class,'badge')]");
 
 	public String getPageTitle() {
@@ -63,6 +63,18 @@ public class HomePage {
 
 	public boolean isH2HeaderVisible() {
 		return util.isElementEnabled(h2Header);
+	}
+
+	public boolean isSalesImageAvailable() {
+		return util.isElementDisplayed(saleImg);
+	}
+	
+	public boolean getBadgeCount() {
+		int count = Integer.parseInt(util.getElementText(badgeCount));
+		if(count==0) {
+			return true;
+		}
+		return false;
 	}
 
 	private List<String> getAllCardHeaders() {
@@ -92,34 +104,52 @@ public class HomePage {
 		return cardPrice;
 	}
 
-	public List<HashMap<String, HashMap<String, String>>> getRetroSweetDataMap() {
+	private List<HashMap<String, String>> getRetroSweetDataMap() {
 		List<String> cardHeader = getAllCardHeaders();
 		List<String> cardText = getAllCardDescriptions();
 		List<String> cardPrice = getRetroSweetPrices();
-
-		List<HashMap<String, HashMap<String, String>>> listOfMaps = new ArrayList<HashMap<String, HashMap<String, String>>>();
+		List<HashMap<String, String>> listOfMaps = new ArrayList<HashMap<String, String>>();
 
 		for (int i = 0; i < 4; i++) {
-
-			HashMap<String, HashMap<String, String>> data = new HashMap<String, HashMap<String, String>>();
 			HashMap<String, String> dataMap = new HashMap<String, String>();
+			dataMap.put("name", cardHeader.get(i));
 			dataMap.put("desc", cardText.get(i));
 			dataMap.put("price", cardPrice.get(i));
-			data.put(cardHeader.get(i), dataMap);
-
-			listOfMaps.add(data);
+			listOfMaps.add(dataMap);
 		}
-		System.out.println(listOfMaps);
+
+		// System.out.println(listOfMaps);
 
 		return listOfMaps;
 	}
 
 	public void getDataMap() {
-		List<HashMap<String, HashMap<String, String>>> listOfMaps = getRetroSweetDataMap();
-		Map<String, String> maps = new HashMap<>();
+
+		List<HashMap<String, String>> listOfMaps = getRetroSweetDataMap();
 
 		for (int i = 0; i < listOfMaps.size(); i++) {
-
+			Iterator<Entry<String, String>> myIt = listOfMaps.get(i).entrySet().iterator();
+			while (myIt.hasNext()) {
+				Entry<String, String> entryName = myIt.next();
+				System.out.println(entryName.getKey() + "===========" + entryName.getValue());
+			}
 		}
+
 	}
+
+	public BrowseSweetsPage browserSweets() {
+		util.doClick(browseSweetsLink);
+		return new BrowseSweetsPage(driver);
+	}
+
+	public AboutPage aboutPage() {
+		util.doClick(aboutLink);
+		return new AboutPage(driver);
+	}
+
+	public LoginPage loginPage() {
+		util.doClick(loginLink);
+		return new LoginPage(driver);
+	}
+
 }
