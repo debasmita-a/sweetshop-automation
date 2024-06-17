@@ -19,7 +19,7 @@ public class BrowseSweetsPage {
 	private By badgeCount = By.xpath("//span[contains(@class,'badge')]");
 	private By basketLink = By.xpath("//a[@href='/basket']");
 	
-	private static int basketCount = 0;
+	public int basketCount = 0;
 	
 	public String getPageHeaderText() {
 		return util.getElementText(pageHeader);

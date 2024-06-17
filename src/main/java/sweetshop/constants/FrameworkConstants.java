@@ -10,4 +10,5 @@ public class FrameworkConstants {
 	public static final String BROWSESWEETS_HEADER = "Browse sweets";
 	public static final String YOURBASKET_HEADER = "Your Basket";
 	public static final String EMPTY_BASKET_ALERT_MSG = "Are you sure you want to empty your basket?";
+	public static final String ORDER_DETAILS_CHECK_TEXT = "Please check your order details and then enter your payment and delivery details.";
 }

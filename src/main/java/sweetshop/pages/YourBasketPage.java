@@ -53,6 +53,7 @@ public class YourBasketPage {
 	private By totalVal = By.xpath("(//ul[@id='basketItems']//li)[3]/strong");
 	
 	private By sweetsLink = By.linkText("Sweets");
+	private By basketLink = By.xpath("//a[@href='/basket']");
 	
 	public String getPageHeader() {
 		return util.getElementText(yourBasketPageHeader);
@@ -137,14 +138,34 @@ public class YourBasketPage {
 			basketMap.put("Item name", itemNames.get(i));
 			basketMap.put("Item price", itemPrices.get(i));
 			basketMap.put("Item count", itemCount.get(i));
+			
+			System.out.println(basketMap);
 		}
-		
-		System.out.println(basketMap);		
-		
+	
 	}
 	
 	public int getBasketCount() {
 		return Integer.parseInt(util.getElementText(basketCount));
+	}
+	
+	public String emptyBasketAlertText() {
+		util.doClick(emptyBasketLink);
+		return util.getAlertText();
+	}
+	
+	public int emptyBasket() {
+		util.doClick(emptyBasketLink);
+		util.acceptAlert();
+		return getBasketCount();
+	}
+	
+	public boolean dismissEmptyBasketAlert() {
+		util.doClick(emptyBasketLink);
+		util.dismissAlert();
+		if(util.getElements(itemsInBasket).size()>0) {
+			return true;
+		}		
+		return false;
 	}
 	
 	

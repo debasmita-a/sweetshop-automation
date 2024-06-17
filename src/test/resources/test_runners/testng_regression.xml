@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite" verbose="4" parallel="tests" thread-count="3">
+
+	<test name="Login Page Test">
+		<classes>
+			<class name="sweetshop.tests.HomePageTest" />
+		</classes>
+	</test>
+	
+	<test name="Browse Sweets Page Test">
+		<classes>
+			<class name="sweetshop.tests.BrowseSweetsPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Your Basket Page Test">
+		<classes>
+			<class name="sweetshop.tests.YourBasketPageTest" />
+		</classes>
+	</test>
+	
+</suite>

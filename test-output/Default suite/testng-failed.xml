@@ -6,7 +6,7 @@
       <class name="sweetshop.tests.YourBasketPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="addToBasket" invocation-numbers="0 1 2 3"/>
+          <include name="addToBasketTest" invocation-numbers="0"/>
           <include name="setup_basketPage"/>
           <include name="init"/>
         </methods>

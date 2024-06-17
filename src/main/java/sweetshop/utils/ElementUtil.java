@@ -3,6 +3,7 @@ package sweetshop.utils;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -55,6 +56,25 @@ private WebDriver driver;
 	public void elementSelectByValue(By locator, String value) {
 		Select select = new Select(getElement(locator));
 		select.selectByValue(value);
+	}
+	
+	//alert utils :
+	
+	public void acceptAlert() {
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
+	
+	public void dismissAlert() {
+		Alert alert = driver.switchTo().alert();
+		alert.dismiss();
+	}
+	
+	public String getAlertText() {
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		alert.dismiss();
+		return alertText;
 	}
 	
 	//browser utilities :
