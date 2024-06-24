@@ -5,8 +5,8 @@
     <classes>
       <class name="sweetshop.tests.YourBasketPageTest">
         <methods>
+          <include name="emptyBasketAlertTextTest"/>
           <include name="teardown"/>
-          <include name="addToBasketTest" invocation-numbers="0"/>
           <include name="setup_basketPage"/>
           <include name="init"/>
         </methods>

@@ -42,22 +42,16 @@ public class YourBasketPageTest extends BaseTest{
 		Assert.assertTrue(basketPage.isYourBasketHeaderAvailable());
 	}
 	
-	@Test
-	public void emptyBasketAlertTextTest() {
+	@Test(dataProvider="addToBasketData")
+	public void emptyBasketAlertTextTest(List<String> items) {
+		System.out.println(items);
 		basketPage = sweetsPage.basketPage();
+		basketPage.goBackToBrowseSweetsPage();
+		for(String s : items) {
+			sweetsPage.addItemToBasket(s);
+		}
+		basketPage.goBackToBasketPage();
 		Assert.assertEquals(basketPage.emptyBasketAlertText(), FrameworkConstants.EMPTY_BASKET_ALERT_MSG);
-	}
-	
-	@Test
-	public void emptyBasketTest() {
-		basketPage = sweetsPage.basketPage();
-		Assert.assertEquals(basketPage.emptyBasket(), 0);
-	}
-	
-	@Test
-	public void dismissEmptyBasketAlertTest() {
-		basketPage = sweetsPage.basketPage();
-		Assert.assertTrue(basketPage.dismissEmptyBasketAlert());
 	}
 	
 	@DataProvider
@@ -70,15 +64,38 @@ public class YourBasketPageTest extends BaseTest{
 		Object[][] data = new Object[1][1];
 		data[0][0] = dataList;
 		return data;
+	}	
+	
+	@Test(dataProvider="addToBasketData")
+	public void emptyBasketTest(List<String> items) {
+		System.out.println(items);
+		basketPage = sweetsPage.basketPage();
+		basketPage.goBackToBrowseSweetsPage();
+		for(String s : items) {
+			sweetsPage.addItemToBasket(s);
+		}
+		basketPage.goBackToBasketPage();
+		Assert.assertEquals(basketPage.emptyBasket(), 0);
 	}
 	
+	@Test(dataProvider="addToBasketData")
+	public void dismissEmptyBasketAlertTest(List<String> items) {
+		System.out.println(items);
+		basketPage = sweetsPage.basketPage();
+		basketPage.goBackToBrowseSweetsPage(); //Step -1
+		for(String s : items) {
+			sweetsPage.addItemToBasket(s); // Step -2
+		}
+		basketPage.goBackToBasketPage(); // Step -3
+		Assert.assertTrue(basketPage.dismissEmptyBasketAlert()); //Step -4
+	}
+
 	@Test(dataProvider="addToBasketData")
 	public void addToBasketTest(List<String> items) {		
 		System.out.println(items);
 		for(String s : items) {
 			sweetsPage.addItemToBasket(s);
-		}
-		
+		}		
 		basketPage = sweetsPage.basketPage();
 		basketPage.getOrderDetails();
 	}

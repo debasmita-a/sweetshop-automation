@@ -1,11 +1,5 @@
 package sweetshop.tests;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -53,6 +47,11 @@ public class HomePageTest extends BaseTest{
 	@Test
 	public void getBadgeCountTest() {
 		Assert.assertTrue(homePage.getBadgeCount());
+	}
+	
+	@Test
+	public void isFooterTextAvailableTest() {
+		Assert.assertEquals(homePage.isFooterTextAvailable(), FrameworkConstants.FOOTER_TEXT);
 	}
 	
 	@DataProvider

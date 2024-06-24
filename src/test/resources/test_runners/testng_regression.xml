@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Regression Suite" verbose="4" parallel="tests" thread-count="3">
+<suite name="Regression Suite" verbose="4" parallel="tests" thread-count="10">
 
-	<test name="Login Page Test">
+	<test name="Home Page Test">
 		<classes>
 			<class name="sweetshop.tests.HomePageTest" />
 		</classes>

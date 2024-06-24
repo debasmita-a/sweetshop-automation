@@ -76,6 +76,10 @@ public class HomePage {
 		}
 		return false;
 	}
+	
+	public String isFooterTextAvailable() {
+		return util.getElementText(footerText);
+	}
 
 	private List<String> getAllCardHeaders() {
 		List<WebElement> sweetNameList = util.getElements(cardheaders);

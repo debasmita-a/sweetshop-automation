@@ -2,6 +2,8 @@ package sweetshop.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import sweetshop.utils.ElementUtil;
 
@@ -22,6 +24,7 @@ public class BrowseSweetsPage {
 	public int basketCount = 0;
 	
 	public String getPageHeaderText() {
+	
 		return util.getElementText(pageHeader);
 	}
 	

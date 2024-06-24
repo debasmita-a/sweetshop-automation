@@ -168,6 +168,14 @@ public class YourBasketPage {
 		return false;
 	}
 	
+	public void goBackToBrowseSweetsPage() {
+		util.doClick(sweetsLink);
+	}
+	
+	public void goBackToBasketPage() {
+		util.doClick(basketLink);
+	}
+	
 	
 		
 }
