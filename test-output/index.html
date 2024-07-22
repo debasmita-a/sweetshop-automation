@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\in8DebAd\AppData\Local\Temp\testng-eclipse-1502478838\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
+                    <span>C:\Users\in8DebAd\eclipse-workspace\sweetshop-automation\src\test\resources\test_runners\testng_regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Regression_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Regression_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Regression_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Regression_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,145 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">24 methods, 1 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="getItemsMapData">getItemsMapData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.BrowseSweetsPageTest" class="method navigator-link" hash-for-method="addItemToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">addItemToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="addToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">addToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="dismissEmptyBasketAlertTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">dismissEmptyBasketAlertTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="emptyBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">emptyBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getBadgeCountTest">getBadgeCountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="getBasketCountTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">getBasketCountTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="getCheckOrderTextTest">getCheckOrderTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getPageHeaderP2Test">getPageHeaderP2Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getPageHeaderTest">getPageHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.BrowseSweetsPageTest" class="method navigator-link" hash-for-method="getPageHeaderTest">getPageHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="getPageHeaderTest">getPageHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getPageTitleTest">getPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getRetroSweetDataMapTest(Bon Bons, Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets., £1.00)">getRetroSweetDataMapTest(Bon Bons, Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets., £1.00)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getRetroSweetDataMapTest(Sherbert Discs, UFO&#039;s Sherbert Filled Flying Saucers., £0.95)">getRetroSweetDataMapTest(Sherbert Discs, UFO's Sherbert Filled Flying Saucers., £0.95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getRetroSweetDataMapTest(Chocolate Cups, Candy Chocolate Cups., £1.00)">getRetroSweetDataMapTest(Chocolate Cups, Candy Chocolate Cups., £1.00)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="getRetroSweetsHeaderTest">getRetroSweetsHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="isBillingAdressHeaderAvailableTest">isBillingAdressHeaderAvailableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="isFooterTextAvailableTest">isFooterTextAvailableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="isH2HeaderVisibleTest">isH2HeaderVisibleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="isSalesImageAvailableTest">isSalesImageAvailableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.YourBasketPageTest" class="method navigator-link" hash-for-method="isYourBasketHeaderAvailableTest">isYourBasketHeaderAvailableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="sweetshop.tests.HomePageTest" class="method navigator-link" hash-for-method="logoAvailableTest">logoAvailableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,13 +242,187 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sweetshop.tests.YourBasketPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getItemsMapData">
+                  </a> <!-- getItemsMapData -->
+                  <span class="method-name">getItemsMapData</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void sweetshop.tests.YourBasketPageTest.getItemsMapData(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: getItemsMapData([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Chocolate Cups,(java.lang.Double) 1.0,(java.lang.Integer) 1]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sweetshop.tests.BrowseSweetsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">
+                  </a> <!-- addItemToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]) -->
+                  <span class="method-name">addItemToBasketTest</span>
+                  <span class="parameters">([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageHeaderTest">
+                  </a> <!-- getPageHeaderTest -->
+                  <span class="method-name">getPageHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sweetshop.tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBadgeCountTest">
+                  </a> <!-- getBadgeCountTest -->
+                  <span class="method-name">getBadgeCountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageHeaderP2Test">
+                  </a> <!-- getPageHeaderP2Test -->
+                  <span class="method-name">getPageHeaderP2Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageHeaderTest">
+                  </a> <!-- getPageHeaderTest -->
+                  <span class="method-name">getPageHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageTitleTest">
+                  </a> <!-- getPageTitleTest -->
+                  <span class="method-name">getPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRetroSweetDataMapTest(Bon Bons, Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets., £1.00)">
+                  </a> <!-- getRetroSweetDataMapTest(Bon Bons, Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets., £1.00) -->
+                  <span class="method-name">getRetroSweetDataMapTest</span>
+                  <span class="parameters">(Bon Bons, Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets., £1.00)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRetroSweetDataMapTest(Sherbert Discs, UFO&#039;s Sherbert Filled Flying Saucers., £0.95)">
+                  </a> <!-- getRetroSweetDataMapTest(Sherbert Discs, UFO's Sherbert Filled Flying Saucers., £0.95) -->
+                  <span class="method-name">getRetroSweetDataMapTest</span>
+                  <span class="parameters">(Sherbert Discs, UFO's Sherbert Filled Flying Saucers., £0.95)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRetroSweetDataMapTest(Chocolate Cups, Candy Chocolate Cups., £1.00)">
+                  </a> <!-- getRetroSweetDataMapTest(Chocolate Cups, Candy Chocolate Cups., £1.00) -->
+                  <span class="method-name">getRetroSweetDataMapTest</span>
+                  <span class="parameters">(Chocolate Cups, Candy Chocolate Cups., £1.00)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRetroSweetsHeaderTest">
+                  </a> <!-- getRetroSweetsHeaderTest -->
+                  <span class="method-name">getRetroSweetsHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isFooterTextAvailableTest">
+                  </a> <!-- isFooterTextAvailableTest -->
+                  <span class="method-name">isFooterTextAvailableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isH2HeaderVisibleTest">
+                  </a> <!-- isH2HeaderVisibleTest -->
+                  <span class="method-name">isH2HeaderVisibleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isSalesImageAvailableTest">
+                  </a> <!-- isSalesImageAvailableTest -->
+                  <span class="method-name">isSalesImageAvailableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoAvailableTest">
+                  </a> <!-- logoAvailableTest -->
+                  <span class="method-name">logoAvailableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">sweetshop.tests.YourBasketPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">
+                  </a> <!-- addToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]) -->
+                  <span class="method-name">addToBasketTest</span>
+                  <span class="parameters">([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dismissEmptyBasketAlertTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">
+                  </a> <!-- dismissEmptyBasketAlertTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]) -->
+                  <span class="method-name">dismissEmptyBasketAlertTest</span>
+                  <span class="parameters">([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">
@@ -133,119 +431,260 @@
                   <span class="parameters">([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">
+                  </a> <!-- emptyBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]) -->
+                  <span class="method-name">emptyBasketTest</span>
+                  <span class="parameters">([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBasketCountTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])">
+                  </a> <!-- getBasketCountTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]) -->
+                  <span class="method-name">getBasketCountTest</span>
+                  <span class="parameters">([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCheckOrderTextTest">
+                  </a> <!-- getCheckOrderTextTest -->
+                  <span class="method-name">getCheckOrderTextTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageHeaderTest">
+                  </a> <!-- getPageHeaderTest -->
+                  <span class="method-name">getPageHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isBillingAdressHeaderAvailableTest">
+                  </a> <!-- isBillingAdressHeaderAvailableTest -->
+                  <span class="method-name">isBillingAdressHeaderAvailableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isYourBasketHeaderAvailableTest">
+                  </a> <!-- isYourBasketHeaderAvailableTest -->
+                  <span class="method-name">isYourBasketHeaderAvailableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Regression_Suite-class-passed -->
+        </div> <!-- panel Regression_Suite -->
+        <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\in8DebAd\AppData\Local\Temp\testng-eclipse-1502478838\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\in8DebAd\eclipse-workspace\sweetshop-automation\src\test\resources\test_runners\testng_regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Home Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;sweetshop.tests.YourBasketPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;emptyBasketAlertTextTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- sweetshop.tests.YourBasketPageTest --&gt;
+      &lt;class name=&quot;sweetshop.tests.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Home Page Test --&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Browse Sweets Page Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sweetshop.tests.BrowseSweetsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Browse Sweets Page Test --&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Your Basket Page Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sweetshop.tests.YourBasketPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Your Basket Page Test --&gt;
+&lt;/suite&gt; &lt;!-- Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Home Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Browse Sweets Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Your Basket Page Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Regression_Suite');
+function tableData_Regression_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'emptyBasketAlertTextTest')
+data.setCell(0, 1, 'getBasketCountTest')
 data.setCell(0, 2, 'sweetshop.tests.YourBasketPageTest')
-data.setCell(0, 3, 1127);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 1666);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'emptyBasketTest')
+data.setCell(1, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(1, 3, 1653);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'dismissEmptyBasketAlertTest')
+data.setCell(2, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(2, 3, 1623);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'emptyBasketAlertTextTest')
+data.setCell(3, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(3, 3, 1608);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addToBasketTest')
+data.setCell(4, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(4, 3, 966);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'isYourBasketHeaderAvailableTest')
+data.setCell(5, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(5, 3, 606);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'isBillingAdressHeaderAvailableTest')
+data.setCell(6, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(6, 3, 560);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getCheckOrderTextTest')
+data.setCell(7, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(7, 3, 511);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getPageHeaderTest')
+data.setCell(8, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(8, 3, 509);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addItemToBasketTest')
+data.setCell(9, 2, 'sweetshop.tests.BrowseSweetsPageTest')
+data.setCell(9, 3, 216);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getRetroSweetDataMapTest')
+data.setCell(10, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(10, 3, 152);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getRetroSweetDataMapTest')
+data.setCell(11, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(11, 3, 123);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getRetroSweetDataMapTest')
+data.setCell(12, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(12, 3, 117);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'getBadgeCountTest')
+data.setCell(13, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(13, 3, 45);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'getPageHeaderP2Test')
+data.setCell(14, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(14, 3, 35);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getRetroSweetsHeaderTest')
+data.setCell(15, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(15, 3, 28);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getPageHeaderTest')
+data.setCell(16, 2, 'sweetshop.tests.BrowseSweetsPageTest')
+data.setCell(16, 3, 25);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getPageHeaderTest')
+data.setCell(17, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(17, 3, 24);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'isSalesImageAvailableTest')
+data.setCell(18, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(18, 3, 23);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'isH2HeaderVisibleTest')
+data.setCell(19, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(19, 3, 22);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'logoAvailableTest')
+data.setCell(20, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(20, 3, 20);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'isFooterTextAvailableTest')
+data.setCell(21, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(21, 3, 17);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'getPageTitleTest')
+data.setCell(22, 2, 'sweetshop.tests.HomePageTest')
+data.setCell(22, 3, 7);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'getItemsMapData')
+data.setCell(23, 2, 'sweetshop.tests.YourBasketPageTest')
+data.setCell(23, 3, 2);
+window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <div id="times-div-Regression_Suite">
+              </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">sweetshop.tests.YourBasketPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">isBillingAdressHeaderAvailableTest</span>
-                <br/>
-                <span class="ignored-method-name">getBasketCountTest</span>
-                <br/>
-                <span class="ignored-method-name">getPageHeaderTest</span>
-                <br/>
-                <span class="ignored-method-name">addToBasketTest</span>
-                <br/>
-                <span class="ignored-method-name">emptyBasketTest</span>
-                <br/>
-                <span class="ignored-method-name">isYourBasketHeaderAvailableTest</span>
-                <br/>
-                <span class="ignored-method-name">dismissEmptyBasketAlertTest</span>
-                <br/>
-                <span class="ignored-method-name">getCheckOrderTextTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.BrowseSweetsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">sweetshop.tests.YourBasketPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
@@ -254,15 +693,133 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup_basketPage</span>
-                <span class="method-start">3700 ms</span>
+                <span class="method-start">12228 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
-                <span class="method-start">5149 ms</span>
+                <span class="method-name">getBadgeCountTest</span>
+                <span class="method-start">12263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPageHeaderP2Test</span>
+                <span class="method-start">12312 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPageHeaderTest</span>
+                <span class="method-start">12349 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.BrowseSweetsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupBrowseSweetsPage</span>
+                <span class="method-start">12357 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getPageTitleTest</span>
+                <span class="method-start">12375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRetroSweetDataMapTest(Bon Bons, Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets., £1.00)</span>
+                <span class="method-start">12397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRetroSweetDataMapTest(Chocolate Cups, Candy Chocolate Cups., £1.00)</span>
+                <span class="method-start">12551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRetroSweetDataMapTest(Sherbert Discs, UFO's Sherbert Filled Flying Saucers., £0.95)</span>
+                <span class="method-start">12669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRetroSweetsHeaderTest</span>
+                <span class="method-start">12794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isFooterTextAvailableTest</span>
+                <span class="method-start">12824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isH2HeaderVisibleTest</span>
+                <span class="method-start">12842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isSalesImageAvailableTest</span>
+                <span class="method-start">12865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoAvailableTest</span>
+                <span class="method-start">12888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">6280 ms</span>
+                <span class="method-start">12911 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.YourBasketPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                <span class="method-start">13189 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.BrowseSweetsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addItemToBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                <span class="method-start">13852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPageHeaderTest</span>
+                <span class="method-start">14070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">14096 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sweetshop.tests.YourBasketPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dismissEmptyBasketAlertTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                <span class="method-start">14156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emptyBasketAlertTextTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                <span class="method-start">15780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emptyBasketTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                <span class="method-start">17390 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getBasketCountTest([Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture])</span>
+                <span class="method-start">19044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCheckOrderTextTest</span>
+                <span class="method-start">20711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPageHeaderTest</span>
+                <span class="method-start">21226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isBillingAdressHeaderAvailableTest</span>
+                <span class="method-start">21736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isYourBasketHeaderAvailableTest</span>
+                <span class="method-start">22297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">22904 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,8 @@
 package sweetshop.tests;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -22,18 +25,22 @@ public class BrowseSweetsPageTest extends BaseTest{
 	
 	@DataProvider
 	public Object[][] addToBasketData(){
-		return new Object[][] {
-			{"Chocolate Cups"},
-			{"Strawberry Bon Bons"},
-			{"Jellies"},
-			{"Dolly Mixture"}
-		};
+		List<String> dataList = new ArrayList<>();
+		dataList.add("Chocolate Cups");
+		dataList.add("Strawberry Bon Bons");
+		dataList.add("Jellies");
+		dataList.add("Dolly Mixture");
+		Object[][] data = new Object[1][1];
+		data[0][0] = dataList;
+		return data;
 	}
 	
 	@Test(dataProvider="addToBasketData")
-	public void addItemToBasketTest(String itemName) {		
-		sweetsPage.addItemToBasket(itemName);
-		Assert.assertTrue(sweetsPage.getBasketCount());
+	public void addItemToBasketTest(List<String> items) {	
+		for(String item : items) {
+			sweetsPage.addItemToBasket(item);
+		}
+		Assert.assertEquals(sweetsPage.getBasketCount(), items.size());
 	}
 
 }

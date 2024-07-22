@@ -2,8 +2,11 @@ package sweetshop.pages;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -96,7 +99,7 @@ public class YourBasketPage {
 		util.doClick(checkoutBtn);
 	}
 	
-	public List<String> getBasketItemNames() {
+	private List<String> getBasketItemNames() {
 		List<WebElement> items = util.getElements(itemsInBasket);
 		List<String> itemNames = new ArrayList<>();
 		
@@ -106,7 +109,7 @@ public class YourBasketPage {
 		return itemNames;
 	}
 	
-	public List<Double> getBasketItemPrices() {
+	private List<Double> getBasketItemPrices() {
 		List<WebElement> prices = util.getElements(itemsPrices);
 		List<Double> itemPrices = new ArrayList<>();
 		
@@ -116,7 +119,7 @@ public class YourBasketPage {
 		return itemPrices;
 	}
 	
-	public List<Integer> getCountPerItem() {
+	private List<Integer> getCountPerItem() {
 		List<WebElement> count = util.getElements(countPerItem);
 		List<Integer> itemCount = new ArrayList<>();
 		
@@ -126,22 +129,23 @@ public class YourBasketPage {
 		return itemCount;
 	}
 	
-	public void getOrderDetails() {
+	public List<Map<String, Object>> getOrderDetails() {
 		
 		List<String> itemNames = getBasketItemNames();
 		List<Double> itemPrices = getBasketItemPrices();
 		List<Integer> itemCount = getCountPerItem();
 		
-		Map<String, Object> basketMap = new HashMap<>();
+		Map<String, Object> basketMap;
+		List<Map<String, Object>> listOfMaps = new ArrayList<Map<String, Object>>();
 		
 		for(int i=0; i<itemNames.size(); i++) {
+			basketMap = new HashMap<>();
 			basketMap.put("Item name", itemNames.get(i));
 			basketMap.put("Item price", itemPrices.get(i));
 			basketMap.put("Item count", itemCount.get(i));
-			
-			System.out.println(basketMap);
+			listOfMaps.add(basketMap);
 		}
-	
+		return listOfMaps;
 	}
 	
 	public int getBasketCount() {
@@ -162,10 +166,10 @@ public class YourBasketPage {
 	public boolean dismissEmptyBasketAlert() {
 		util.doClick(emptyBasketLink);
 		util.dismissAlert();
-		if(util.getElements(itemsInBasket).size()>0) {
-			return true;
+		if(util.getElements(itemsInBasket).isEmpty()) {
+			return false;
 		}		
-		return false;
+		return true;
 	}
 	
 	public void goBackToBrowseSweetsPage() {
@@ -174,8 +178,6 @@ public class YourBasketPage {
 	
 	public void goBackToBasketPage() {
 		util.doClick(basketLink);
-	}
-	
-	
+	}	
 		
 }

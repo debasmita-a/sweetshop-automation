@@ -24,22 +24,16 @@ public class BrowseSweetsPage {
 	public int basketCount = 0;
 	
 	public String getPageHeaderText() {
-	
 		return util.getElementText(pageHeader);
 	}
 	
 	public void addItemToBasket(String itemName) {
 		String addToBasketXpath = "//a[contains(@data-name,'" + itemName + "')]";
 		driver.findElement(By.xpath(addToBasketXpath)).click();
-		basketCount++;
 	}
 	
-	public boolean getBasketCount() {
-		int count = Integer.parseInt(util.getElementText(badgeCount));
-		if(basketCount==count) {
-			return true;
-		}
-		return false;
+	public int getBasketCount() {
+		return Integer.parseInt(util.getElementText(badgeCount));	
 	}
 	
 	public YourBasketPage basketPage() {

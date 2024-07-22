@@ -1,21 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="24" passed="23" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-24T14:33:13 IST" name="Default suite" finished-at="2024-06-24T14:33:19 IST" duration-ms="6284">
+  <suite started-at="2024-07-22T11:25:00 IST" name="Regression Suite" finished-at="2024-07-22T11:25:23 IST" duration-ms="22910">
     <groups>
     </groups>
-    <test started-at="2024-06-24T14:33:13 IST" name="Default test" finished-at="2024-06-24T14:33:19 IST" duration-ms="6284">
-      <class name="sweetshop.tests.YourBasketPageTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:sweetshop.tests.YourBasketPageTest@762ef0ea]" started-at="2024-06-24T14:33:13 IST" name="init" finished-at="2024-06-24T14:33:17 IST" duration-ms="3692" status="PASS">
+    <test started-at="2024-07-22T11:25:00 IST" name="Home Page Test" finished-at="2024-07-22T11:25:13 IST" duration-ms="12917">
+      <class name="sweetshop.tests.HomePageTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:00 IST" name="init" finished-at="2024-07-22T11:25:12 IST" duration-ms="12251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setup_basketPage()[pri:0, instance:sweetshop.tests.YourBasketPageTest@762ef0ea]" started-at="2024-06-24T14:33:17 IST" name="setup_basketPage" finished-at="2024-06-24T14:33:18 IST" duration-ms="1439" status="PASS">
+        <test-method signature="getBadgeCountTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:12 IST" name="getBadgeCountTest" finished-at="2024-07-22T11:25:12 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBadgeCountTest -->
+        <test-method signature="getPageHeaderP2Test()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:12 IST" name="getPageHeaderP2Test" finished-at="2024-07-22T11:25:12 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageHeaderP2Test -->
+        <test-method signature="getPageHeaderTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:12 IST" name="getPageHeaderTest" finished-at="2024-07-22T11:25:12 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageHeaderTest -->
+        <test-method signature="getPageTitleTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:12 IST" name="getPageTitleTest" finished-at="2024-07-22T11:25:12 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageTitleTest -->
+        <test-method signature="getRetroSweetDataMapTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:12 IST" name="getRetroSweetDataMapTest" data-provider="retrosweetdata" finished-at="2024-07-22T11:25:13 IST" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bon Bons]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pink Strawberry Bonbons - sugar dusted, strawberry flavoured chewy sweets.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[£1.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRetroSweetDataMapTest -->
+        <test-method signature="getRetroSweetDataMapTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="getRetroSweetDataMapTest" data-provider="retrosweetdata" finished-at="2024-07-22T11:25:13 IST" duration-ms="117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chocolate Cups]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Candy Chocolate Cups.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[£1.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRetroSweetDataMapTest -->
+        <test-method signature="getRetroSweetDataMapTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="getRetroSweetDataMapTest" data-provider="retrosweetdata" finished-at="2024-07-22T11:25:13 IST" duration-ms="123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sherbert Discs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UFO's Sherbert Filled Flying Saucers.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[£0.95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRetroSweetDataMapTest -->
+        <test-method signature="getRetroSweetsHeaderTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="getRetroSweetsHeaderTest" finished-at="2024-07-22T11:25:13 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRetroSweetsHeaderTest -->
+        <test-method signature="isFooterTextAvailableTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="isFooterTextAvailableTest" finished-at="2024-07-22T11:25:13 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFooterTextAvailableTest -->
+        <test-method signature="isH2HeaderVisibleTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="isH2HeaderVisibleTest" finished-at="2024-07-22T11:25:13 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isH2HeaderVisibleTest -->
+        <test-method signature="isSalesImageAvailableTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="isSalesImageAvailableTest" finished-at="2024-07-22T11:25:13 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSalesImageAvailableTest -->
+        <test-method signature="logoAvailableTest()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="logoAvailableTest" finished-at="2024-07-22T11:25:13 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoAvailableTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sweetshop.tests.HomePageTest@58ea606c]" started-at="2024-07-22T11:25:13 IST" name="teardown" finished-at="2024-07-22T11:25:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sweetshop.tests.HomePageTest -->
+    </test> <!-- Home Page Test -->
+    <test started-at="2024-07-22T11:25:00 IST" name="Browse Sweets Page Test" finished-at="2024-07-22T11:25:14 IST" duration-ms="14102">
+      <class name="sweetshop.tests.BrowseSweetsPageTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:sweetshop.tests.BrowseSweetsPageTest@dd0c991]" started-at="2024-07-22T11:25:00 IST" name="init" finished-at="2024-07-22T11:25:12 IST" duration-ms="12356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setupBrowseSweetsPage()[pri:0, instance:sweetshop.tests.BrowseSweetsPageTest@dd0c991]" started-at="2024-07-22T11:25:12 IST" name="setupBrowseSweetsPage" finished-at="2024-07-22T11:25:14 IST" duration-ms="1495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowseSweetsPage -->
+        <test-method signature="addItemToBasketTest(java.util.List)[pri:0, instance:sweetshop.tests.BrowseSweetsPageTest@dd0c991]" started-at="2024-07-22T11:25:14 IST" name="addItemToBasketTest" data-provider="addToBasketData" finished-at="2024-07-22T11:25:14 IST" duration-ms="216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToBasketTest -->
+        <test-method signature="getPageHeaderTest()[pri:0, instance:sweetshop.tests.BrowseSweetsPageTest@dd0c991]" started-at="2024-07-22T11:25:14 IST" name="getPageHeaderTest" finished-at="2024-07-22T11:25:14 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageHeaderTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sweetshop.tests.BrowseSweetsPageTest@dd0c991]" started-at="2024-07-22T11:25:14 IST" name="teardown" finished-at="2024-07-22T11:25:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sweetshop.tests.BrowseSweetsPageTest -->
+    </test> <!-- Browse Sweets Page Test -->
+    <test started-at="2024-07-22T11:25:00 IST" name="Your Basket Page Test" finished-at="2024-07-22T11:25:23 IST" duration-ms="22910">
+      <class name="sweetshop.tests.YourBasketPageTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:00 IST" name="init" finished-at="2024-07-22T11:25:12 IST" duration-ms="12218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setup_basketPage()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:12 IST" name="setup_basketPage" finished-at="2024-07-22T11:25:13 IST" duration-ms="961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_basketPage -->
-        <test-method signature="emptyBasketAlertTextTest(java.util.List)[pri:0, instance:sweetshop.tests.YourBasketPageTest@762ef0ea]" started-at="2024-06-24T14:33:18 IST" name="emptyBasketAlertTextTest" data-provider="addToBasketData" finished-at="2024-06-24T14:33:19 IST" duration-ms="1127" status="PASS">
+        <test-method signature="addToBasketTest(java.util.List)[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:13 IST" name="addToBasketTest" data-provider="addToBasketData" finished-at="2024-07-22T11:25:14 IST" duration-ms="966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToBasketTest -->
+        <test-method signature="dismissEmptyBasketAlertTest(java.util.List)[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:14 IST" name="dismissEmptyBasketAlertTest" data-provider="addToBasketData" finished-at="2024-07-22T11:25:16 IST" duration-ms="1623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dismissEmptyBasketAlertTest -->
+        <test-method signature="emptyBasketAlertTextTest(java.util.List)[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:16 IST" name="emptyBasketAlertTextTest" data-provider="addToBasketData" finished-at="2024-07-22T11:25:17 IST" duration-ms="1608" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +190,88 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyBasketAlertTextTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sweetshop.tests.YourBasketPageTest@762ef0ea]" started-at="2024-06-24T14:33:19 IST" name="teardown" finished-at="2024-06-24T14:33:19 IST" duration-ms="0" status="PASS">
+        <test-method signature="emptyBasketTest(java.util.List)[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:17 IST" name="emptyBasketTest" data-provider="addToBasketData" finished-at="2024-07-22T11:25:19 IST" duration-ms="1653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyBasketTest -->
+        <test-method signature="getBasketCountTest(java.util.List)[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:19 IST" name="getBasketCountTest" data-provider="addToBasketData" finished-at="2024-07-22T11:25:21 IST" duration-ms="1666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Chocolate Cups, Strawberry Bon Bons, Jellies, Dolly Mixture]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBasketCountTest -->
+        <test-method signature="getCheckOrderTextTest()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:21 IST" name="getCheckOrderTextTest" finished-at="2024-07-22T11:25:21 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCheckOrderTextTest -->
+        <test-method signature="getItemsMapData(java.lang.String)[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:21 IST" name="getItemsMapData" data-provider="mapTestData" finished-at="2024-07-22T11:25:21 IST" duration-ms="2" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void sweetshop.tests.YourBasketPageTest.getItemsMapData(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: getItemsMapData([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Chocolate Cups,(java.lang.Double) 1.0,(java.lang.Integer) 1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void sweetshop.tests.YourBasketPageTest.getItemsMapData(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: getItemsMapData([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Chocolate Cups,(java.lang.Double) 1.0,(java.lang.Integer) 1]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getItemsMapData -->
+        <test-method signature="getPageHeaderTest()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:21 IST" name="getPageHeaderTest" finished-at="2024-07-22T11:25:22 IST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageHeaderTest -->
+        <test-method signature="isBillingAdressHeaderAvailableTest()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:22 IST" name="isBillingAdressHeaderAvailableTest" finished-at="2024-07-22T11:25:22 IST" duration-ms="560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isBillingAdressHeaderAvailableTest -->
+        <test-method signature="isYourBasketHeaderAvailableTest()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:22 IST" name="isYourBasketHeaderAvailableTest" finished-at="2024-07-22T11:25:23 IST" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isYourBasketHeaderAvailableTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sweetshop.tests.YourBasketPageTest@1fb700ee]" started-at="2024-07-22T11:25:23 IST" name="teardown" finished-at="2024-07-22T11:25:23 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- sweetshop.tests.YourBasketPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Your Basket Page Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
